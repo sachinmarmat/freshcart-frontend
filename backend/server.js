@@ -28,7 +28,7 @@ const Addwishlist = require('./model/Wishlist');
 //mongoose--------------------
 
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/freshcart").then((res) => {
+mongoose.connect("mongodb+srv://sachin:ZMJDO5k2PC6yVyi9@cluster0.aaawank.mongodb.net/freshcart").then((res) => {
     console.log("mongodb connected")
 }).catch((err) => {
     console.log(err)

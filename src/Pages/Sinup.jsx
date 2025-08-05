@@ -1,5 +1,5 @@
 import React from 'react';
-import Signupg from '../assets/Signup-g.svg'
+import SignupImg from '../assets/Signup-g.svg';
 import Navbar from '../Componants/Navbar';
 
 
@@ -14,7 +14,7 @@ const Signup1 = () => {
         {/* Left Illustration */}
         <div className="flex items-center justify-center p-8">
           <img
-          src={Signupg}
+          src={SignupImg}
             alt="Signup Visual"
             className="w-full max-w-md"
           />
