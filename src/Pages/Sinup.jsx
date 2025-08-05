@@ -1,5 +1,5 @@
 import React from 'react';
-import SignupImg from '../assets/Signup-g.svg';
+import SignupImg from '../assets/signup-g.svg';
 import Navbar from '../Componants/Navbar';
 
 
