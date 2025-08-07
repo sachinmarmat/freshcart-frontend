@@ -23,7 +23,7 @@ export default function ProductForm() {
     let [getproducts, setgetproducts] = useState([])
 
     let allproducts = () => {
-        axios.get("http://localhost:5151/allproduct").then((res) => {
+        axios.get("https://freshcart-backend-am1p.onrender.com/allproduct").then((res) => {
             if (res.data.status) {
                 setgetproducts(res.data.ourproduct)
             }
@@ -46,7 +46,7 @@ export default function ProductForm() {
                 title: "alredy product"
             });
         } else {
-            axios.post("http://localhost:5151/addproducts", productdata).then((res) => {
+            axios.post("https://freshcart-backend-am1p.onrender.com/addproducts", productdata).then((res) => {
                 if (res.data.status) {
                     Swal.fire({
                         title: res.data.msg,

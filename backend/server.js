@@ -274,5 +274,7 @@ app.post("/updatequantity", async (req, res) => {
 
 
 })
-
+app.get("/", (req, res) => {
+    res.send('hello')
+})
 

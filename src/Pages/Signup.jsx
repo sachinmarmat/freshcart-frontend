@@ -24,7 +24,7 @@ function Signup({ setOpen }) {
   let [getuser, setgetuser] = useState([])
 
   let allusers = () => {
-    axios.get("http://localhost:5151/allusers").then((res) => {
+    axios.get("https://freshcart-backend-am1p.onrender.com/allusers").then((res) => {
       if (res.data.status) {
         setgetuser(res.data.ouruser)
       }
@@ -50,7 +50,7 @@ function Signup({ setOpen }) {
       });
     } else {
 
-    axios.post("http://localhost:5151/signup", { Sinupdata })
+    axios.post("https://freshcart-backend-am1p.onrender.com/signup", { Sinupdata })
     .then((res) => {
   if (res.data.status) {
     Swal.fire({

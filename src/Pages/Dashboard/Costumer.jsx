@@ -5,7 +5,7 @@ function Costumer() {
   const [getuser, setgetuser] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5151/allusers")
+    axios.get("https://freshcart-backend-am1p.onrender.com/allusers")
       .then((res) => {
         if (res.data.status) {
           setgetuser(res.data.ouruser);

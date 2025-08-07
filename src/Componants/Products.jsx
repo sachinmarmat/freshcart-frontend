@@ -20,7 +20,7 @@ function Products() {
 
     useEffect(() => {
 
-        axios.get("http://localhost:5151/allproduct").then((res) => {
+        axios.get("https://freshcart-backend-am1p.onrender.com/allproduct").then((res) => {
             if (res.data.status) {
                 setproductdata(res.data.ourproduct);
             }

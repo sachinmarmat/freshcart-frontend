@@ -44,7 +44,7 @@ function Addcart() {
     }, [])
 
     let addwishlistdata = () => {
-        axios.get("http://localhost:5151/addwishlist").then((res) => {
+        axios.get("https://freshcart-backend-am1p.onrender.com/addwishlist").then((res) => {
             if (res.data.status) {
                 setwishlist(res.data.wishlistdatas)
             }

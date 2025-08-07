@@ -14,7 +14,7 @@ function Wishlist({ onClose }) {
 
 
   let carttodata = () => {
-    axios.get("http://localhost:5151/addtocart").then((res) => {
+    axios.get("https://freshcart-backend-am1p.onrender.com/addtocart").then((res) => {
       if (res.data.status) {
         setCartItems(res.data.cartdata)
       }
@@ -29,7 +29,7 @@ function Wishlist({ onClose }) {
 
   // removeproduct------------
   let removeitem = (item) => {
-    axios.post("http://localhost:5151/removeitem", item).then((res) => {
+    axios.post("https://freshcart-backend-am1p.onrender.com/removeitem", item).then((res) => {
       if (res.data.status) {
         alert(res.data.msg)
 
@@ -64,13 +64,13 @@ function Wishlist({ onClose }) {
 
     let increase=()=>{
       setQuantity(++Quantity)
-      axios.post("http://localhost:5151/updatequantity",{mydata,Quantity})
+      axios.post("https://freshcart-backend-am1p.onrender.com/updatequantity",{mydata,Quantity})
     }
 
     
     let decrease=()=>{
       setQuantity(--Quantity)
-      axios.post("http://localhost:5151/updatequantity",{mydata,Quantity})
+      axios.post("https://freshcart-backend-am1p.onrender.com/updatequantity",{mydata,Quantity})
     }
 
 

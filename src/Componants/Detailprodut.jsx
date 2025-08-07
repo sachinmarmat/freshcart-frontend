@@ -38,7 +38,7 @@ export default function ProductDetails() {
       "quantity": 1
     };
 
-    axios.post("http://localhost:5151/addtocart", cartItem)
+    axios.post("https://freshcart-backend-am1p.onrender.com/addtocart", cartItem)
       .then((res) => {
         if (res.data.status) {
           alert("Added to cart successfully!");
